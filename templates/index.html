@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Flas con MySql</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Occupation</th>
+        <th>created at</th>
+        <th>updated at</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if fr %}
+      {% for x in fr %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.first_name}}</td>
+            <td>{{x.last_name}}</td>
+            <td>{{x.occupations}}</td>
+            <td>{{x.created_at}}</td>
+            <td>{{x.updated_at}}</td>
+        </tr>
+      {% endfor  %}
+    {% endif %}
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
