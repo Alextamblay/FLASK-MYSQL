@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 # importar la clase de friend.py
-from friend import Friend
+from models.friend import Friend
 
 app = Flask(__name__)
 @app.route("/")

@@ -1,5 +1,5 @@
 # importar la función que devolverá una instancia de una conexión
-from mysqlconnection import connectToMySQL
+from config.mysqlconnection import connectToMySQL
 # modelar la clase después de la tabla friend de nuestra base de datos
 class Friend:
     def __init__( self , data ):
